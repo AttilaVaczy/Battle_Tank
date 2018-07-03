@@ -2,6 +2,11 @@
 
 #include "TankPlayerController.h"
 
+void Tick(float DeltaTime)
+{
+	Super::Tick(Deltatime)
+}
+
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
