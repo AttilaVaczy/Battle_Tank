@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Tank.h"
 #include "CoreMinimal.h"
+#include "Tank.h"
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"
 
@@ -19,5 +19,10 @@ public:
 	ATank* GetControlledTank() const;
 
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaTime) override;
+
+private: 
+	void AimTowardsCrosshair();
 	
 };
